@@ -22,7 +22,7 @@ function About() {
               pauseOnClick={true}
               delay={0}
               play={true}
-              direction="right"
+              direction="left"
             >
               {skillsData.map((skill, id) => (
                 <div

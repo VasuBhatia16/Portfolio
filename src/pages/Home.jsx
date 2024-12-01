@@ -7,7 +7,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import imagedeveloper from "../Assets/images/imagedeveloper.png";
+import me from "../Assets/images/me.jpg";
 
 function Home() {
   const socialMedia = UserData.socialMedia;
@@ -27,7 +27,7 @@ function Home() {
             Hello <span className="wave">👋</span>
           </h2>
           <h2 className="pt-2 text-2xl font-semibold leading-tight text-gray-900">
-            Im {UserData.name}
+            I'm {UserData.name}
           </h2>
           <TypewriterText />
 
@@ -47,12 +47,14 @@ function Home() {
           </div>
         </div>
 
-        <div className="mt-20 lg:mt-12">
+        <div className="mt-20 lg:mt-12 image-wrapper">
+          <a href="http://instagram.com/vasu_bhatia16">
           <img
             className="max-w[550px] bg-cover bg-center bg-no-repeat lg:h-[400px] lg:w-[600px]"
-            src={imagedeveloper}
+            src={me}
             alt=""
-          />
+            />
+            </a>
         </div>
       </div>
     </div>

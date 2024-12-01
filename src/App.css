@@ -12,9 +12,9 @@ body {
   background-color: #c850c0;
   background-image: linear-gradient(
     43deg,
-    #4158d0 0%,
-    #c850c0 46%,
-    #ffcc70 100%
+    #41bbd0 0%,
+    #c85050 46%,
+    #94ff70 100%
   );
 }
 html {
@@ -158,4 +158,35 @@ html {
     font-size: 1.4em !important;
     color: #191919 !important;
   }
+}
+
+/* Container to make sure the image is in a circle */
+.image-wrapper {
+  margin-right: 100px;
+  width: 1000px; /* Set the size of the circle */
+  height: 500px; /* Make sure it's a perfect circle */
+  border-radius: 50%; /* Makes it circular */
+  overflow: hidden; /* Ensures the image doesn't overflow the circle */
+  border: 5px solid #10140f79; /* Add a nice border */
+  display: inlineblock; /* Makes it inline for positioning */
+  transition: transform 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+/* The image itself */
+.image-wrapper img {
+  width: 100%; /* Make sure the image fills the wrapper */
+  height: 100%; /* Make sure the image fills the wrapper */
+  object-fit: cover; /* Ensures the image covers the entire area without distortion */
+  object-position: center 25%;
+  transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+}
+
+/* Hover effect */
+.image-wrapper:hover img {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Optional: Add a shadow to the circle */
+.image-wrapper:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Adds a nice shadow on hover */
 }
